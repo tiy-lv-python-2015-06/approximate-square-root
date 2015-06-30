@@ -3,9 +3,6 @@
 while True:
     try:
         your_number = int(input("Please enter a Positive Number ")) #This is where we get a Number
-        if your_number <= '0'
-        print("That is not a positive number. Please try again.")# Why cant I put an if statement here to check for a positive number?
-        break
     except ValueError:
         print("Sorry that is not a valid entry")
         continue
