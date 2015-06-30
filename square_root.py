@@ -23,8 +23,8 @@ while True:
     while True:
         guess = .5 * (guess + (user_root / guess))
         if (guess * guess) - user_root <= epsilon:
-            print('The Square root of {}{} is {}{}'.format(is_negative, user_root, round(guess, len(str(epsilon)) - 2), is_i))
+            print('The Square root of {}{} rounded to {} decimal places is {}{}'.format(is_negative, user_root, len(str(epsilon)) - 2, round(guess, len(str(epsilon)) - 2), is_i))
             break
         else:
+            print('on try {} the square root of {}{} is {}{}'.format(count, is_negative, user_root, len(str(epsilon)) - 2,round(guess, len(str(epsilon)) - 2), is_i))
             count += 1
-            print('on try {} the square root of {}{} is {}{}'.format(count, is_negative, user_root, round(guess, len(str(epsilon)) - 2), is_i))
