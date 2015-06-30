@@ -10,7 +10,7 @@ while True:
         break
 # Figure out how to take your_number and check if it is a negative
 guess = 1
-epsilon = 0.001
+epsilon = 0.01
 counter = 0
 
 while True:
